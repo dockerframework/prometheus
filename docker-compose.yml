@@ -30,7 +30,7 @@ services:
     command:
       - '--config.file=/etc/alertmanager/config.yml'
       - '--storage.path=/alertmanager'
-    expose:
+    ports:
       - "9093:9093"
     networks:
       - backend
@@ -155,7 +155,7 @@ services:
 #================================================================================================
   prometheus:
     restart: unless-stopped
-    image: prom/prometheus:v2.2.1
+    image: prom/prometheus:v2.3.0
     container_name: dockerframework_prometheus
     volumes:
       - ./config/prometheus/alert.rules:/etc/prometheus/alert.rules
@@ -168,7 +168,7 @@ services:
       - '--web.console.templates=/etc/prometheus/consoles'
       - '--storage.tsdb.retention=200h'
       - '--web.enable-lifecycle'
-    expose:
+    ports:
       - "9090:9090"
     networks:
       - backend

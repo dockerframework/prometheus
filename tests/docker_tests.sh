@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DOCKER_IMAGE="dockerframework/prometheus"
-DOCKER_TAG="2.2.1"
+DOCKER_TAG="2.3.0"
 
 #### Halt script on error
 set -e
