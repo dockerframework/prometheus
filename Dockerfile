@@ -1,5 +1,5 @@
-ARG PROMETHEUS_VERSION=2.3.0
-FROM prom/prometheus:v${PROMETHEUS_VERSION}
+ARG PROMETHEUS_VERSION=latest
+FROM prom/prometheus:latest
 
 # ================================================================================================
 #  Inspiration: Docker Framework (https://github.com/zeroc0d3/docker-framework)

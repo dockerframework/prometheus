@@ -10,7 +10,7 @@ services:
 env:
   global:
     - COMMIT=${TRAVIS_COMMIT::8}
-    - REPO=dockerframework/prometheus:2.3.0
+    - REPO=dockerframework/prometheus:latest
     - CGO_ENABLED=0
     - GOOS=linux
     - GOARCH=amd64
