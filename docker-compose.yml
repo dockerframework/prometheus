@@ -30,7 +30,7 @@ services:
     command:
       - '--config.file=/etc/alertmanager/config.yml'
       - '--storage.path=/alertmanager'
-    expose:
+    ports:
       - "9093:9093"
     networks:
       - backend
@@ -168,7 +168,7 @@ services:
       - '--web.console.templates=/etc/prometheus/consoles'
       - '--storage.tsdb.retention=200h'
       - '--web.enable-lifecycle'
-    expose:
+    ports:
       - "9090:9090"
     networks:
       - backend
