@@ -155,7 +155,7 @@ services:
 #================================================================================================
   prometheus:
     restart: unless-stopped
-    image: prom/prometheus:v${PROMETHEUS_VERSION:-2.3.0}
+    image: prom/prometheus:v${PROMETHEUS_VERSION:-2.5.0}
     container_name: dockerframework_prometheus
     volumes:
       - ./config/prometheus/alert.rules:/etc/prometheus/alert.rules
