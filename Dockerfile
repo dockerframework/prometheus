@@ -1,4 +1,4 @@
-ARG PROMETHEUS_VERSION=2.3.0
+ARG PROMETHEUS_VERSION=2.5.0
 FROM prom/prometheus:v${PROMETHEUS_VERSION}
 
 # ================================================================================================
